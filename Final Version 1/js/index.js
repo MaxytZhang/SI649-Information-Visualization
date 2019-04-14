@@ -29,7 +29,7 @@ var data = [
          "Transportation- Related": 43,
          "Unspecified": 23  
       }
-];
+]
 
 $(document).ready(function () {
     loadData();
@@ -53,7 +53,7 @@ function loadData() {
                 .attr("height", height + margin.top + margin.bottom)
                 .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
+                  
     color.domain(d3.keys(data[0]).filter(function (key) {
         return key !== "Sex";
     }));
@@ -95,14 +95,18 @@ function loadData() {
                     return "translate(" + x(d.Sex) + ",0)";
                 });
 
-    sex.selectAll("rect").data(function (d) {
-        return d.rates;
-    }).enter().append("rect").attr("width", x.rangeBand()).attr("y", function (d) {
-        return y(d.y1);
-    }).attr("height", function (d) {
-        return y(d.y0) - y(d.y1);
-    }).style("fill", function (d) {
-        return color(d.name);
+    sex.selectAll("rect").data(function (d) {return d.rates;})
+        .enter().append("rect").attr("width", x.rangeBand())
+        .attr("y", function (d) {return y(d.y1);})
+        .attr("height", function (d) {return y(d.y0) - y(d.y1);})
+        .style("fill", function (d) {return color(d.name);})
+        .on("mouseover", function() { tooltip.style("display", null); })
+        .on("mouseout", function() { tooltip.style("display", "none"); })
+        .on("mousemove", function(d) {
+            var xPosition = d3.mouse(this)[0]+10;
+            var yPosition = d3.mouse(this)[1]-25;
+            tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+            tooltip.select("text").text(d.amount);
     });
 
     var legend = svg.selectAll(".legend").data(color.domain().slice().reverse()).enter().append("g").attr("class", "legend").attr("transform", function (d, i) {
@@ -115,4 +119,10 @@ function loadData() {
         .attr("dy", ".35em").style("text-anchor", "start").text(function (d) {
         return d;
     });
+
+    var tooltip = svg.append("g").attr("class", "tooltip").style("display", "none");
+    tooltip.append("rect").attr("width", 30).attr("height", 20).attr("fill", "white").style("opacity", 0.5);
+    tooltip.append("text").attr("x", 15).attr("dy", "1.2em").style("text-anchor", "middle")
+           .attr("font-size", "10px").attr("font-weight", "bold");
+
 }
