@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>雷达图(区域)</title>
+    <script src="https://a.alipayobjects.com/jquery/jquery/1.11.1/jquery.js"></script>
+    <script src="https://gw.alipayobjects.com/as/g/datavis/g2/2.3.13/index.js"></script>
+  </head>
+  <body>
+    <div id="c1"></div>
+    <script>
+      var data = [
+        {item: "5-14 years", value: 0.0000077668371880687, obj: "female"},
+        {item: "15-24 years", value: 0.0000523254962035587, obj: "female"},
+        {item: "25-34 years", value: 0.0000669892045319588, obj: "female"},
+        {item: "35-54 years", value: 0.0000975878512780408, obj: "female"},
+        {item: "55-74 years", value: 0.0000817869887494479, obj: "female"},
+        {item: "75+ years", value: 0.0000458455991535883, obj: "female"},
+      ];
+      var chart = new G2.Chart({
+        id: 'c1',
+        forceFit: true,
+        height: 450,
+        plotCfg: {
+          margin: [20, 140, 60, 80]
+        }
+      });
+      chart.source(data, {
+        'value': {
+          min: 0,
+          max: 0.0001,
+          tickCount: 3
+        }
+      });
+      chart.coord('polar');
+      chart.legend('obj', { // 配置具体字段对应的图例属性
+        title: null,
+        position: 'bottom'
+      });
+      chart.axis('item',{ // 设置坐标系栅格样式
+        line: null
+      });
+      chart.axis('value',{ // 设置坐标系栅格样式
+        grid: {
+          type: 'polygon' //圆形栅格，可以改成
+        }
+      });
+      chart.line().position('item*value').color('obj');
+      chart.point().position('item*value').color('obj').shape('circle');
+      chart.area().position('item*value').color('obj');
+      chart.render();
+    </script>
+  <div id="c2"></div>
+  <script>
+    var data = [
+        {item: "5-14 years", value: 0.000011986469673033, obj: "male"},
+        {item: "15-24 years", value: 0.000192747553810681, obj: "male"},
+        {item: "25-34 years", value: 0.000248587247008946, obj: "male"},
+        {item: "35-54 years", value: 0.000279274021970804, obj: "male"},
+        {item: "55-74 years", value: 0.000281050214108627, obj: "male"},
+        {item: "75+ years", value: 0.00038807333521312, obj: "male"},
+    ];
+    var chart = new G2.Chart({
+      id: 'c2',
+      forceFit: true,
+      height: 450,
+      plotCfg: {
+        margin: [20, 140, 60, 80]
+      }
+    });
+    chart.source(data, {
+      'value': {
+        min: 0,
+        max: 0.0004,
+        tickCount: 5
+      }
+    });
+    chart.coord('polar');
+    chart.legend('obj', { // 配置具体字段对应的图例属性
+      title: null,
+      position: 'bottom'
+    });
+    chart.axis('item',{ // 设置坐标系栅格样式
+      line: null
+    });
+    chart.axis('value',{ // 设置坐标系栅格样式
+      grid: {
+        type: 'polygon' //圆形栅格，可以改成
+      }
+    });
+    chart.line().position('item*value').color('obj');
+    chart.point().position('item*value').color('obj').shape('circle');
+    chart.area().position('item*value').color('obj');
+    chart.render();
+  </script>
+<div id="c3"></div>
+<script>
+  var data = [
+    {item: "5-14 years", value: 0.0000077668371880687, obj: "female"},
+    {item: "15-24 years", value: 0.0000523254962035587, obj: "female"},
+    {item: "25-34 years", value: 0.0000669892045319588, obj: "female"},
+    {item: "35-54 years", value: 0.0000975878512780408, obj: "female"},
+    {item: "55-74 years", value: 0.0000817869887494479, obj: "female"},
+    {item: "75+ years", value: 0.0000458455991535883, obj: "female"},
+    {item: "5-14 years", value: 0.000011986469673033, obj: "male"},
+    {item: "15-24 years", value: 0.000192747553810681, obj: "male"},
+    {item: "25-34 years", value: 0.000248587247008946, obj: "male"},
+    {item: "35-54 years", value: 0.000279274021970804, obj: "male"},
+    {item: "55-74 years", value: 0.000281050214108627, obj: "male"},
+    {item: "75+ years", value: 0.00038807333521312, obj: "male"},
+  ];
+  var chart = new G2.Chart({
+    id: 'c3',
+    forceFit: true,
+    height: 450,
+    plotCfg: {
+      margin: [20, 140, 60, 80]
+    }
+  });
+  chart.source(data, {
+    'value': {
+      min: 0,
+      max: 0.0004,
+      tickCount: 5
+    }
+  });
+  chart.coord('polar');
+  chart.legend('obj', { // 配置具体字段对应的图例属性
+    title: null,
+    position: 'bottom'
+  });
+  chart.axis('item',{ // 设置坐标系栅格样式
+    line: null
+  });
+  chart.axis('value',{ // 设置坐标系栅格样式
+    grid: {
+      type: 'polygon' //圆形栅格，可以改成
+    }
+  });
+  chart.line().position('item*value').color('obj');
+  chart.point().position('item*value').color('obj').shape('circle');
+  chart.area().position('item*value').color('obj');
+  chart.render();
+</script>
+  </body>
+</html>
