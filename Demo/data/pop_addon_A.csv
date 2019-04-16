@@ -1,0 +1,164 @@
+,country,chk_missing,population
+87,Åland Islands,NA,0
+17,Afghanistan,NA,29863000
+1,Algeria,NA,32854000
+3,American Samoa,NA,65000
+80,Andorra,NA,67000
+2,Angola,NA,15941000
+76,Anguilla,NA,12000
+90,Antarctica,NA,0
+5,Bangladesh,NA,130000000
+9,Benin,NA,8439000
+4,Bermuda,NA,64000
+18,Bhutan,NA,2163000
+7,Bolivia,NA,9182000
+6,Bosnia and Herzegovina,NA,3907000
+115,Botswana,NA,1765000
+91,Bouvet Island,NA,0
+94,British Indian Ocean Territory,NA,0
+134,British Virgin Islands,NA,22000
+11,Brunei Darussalam,NA,374000
+131,Burkina Faso,NA,13228000
+8,Burma,NA,0
+15,Burundi,NA,7548000
+12,Cambodia,NA,14071000
+20,Cameroon,NA,16322000
+24,Cape Verde,NA,507000
+19,Cayman Islands,NA,45000
+23,Central African Republic,NA,4038000
+21,Chad,NA,9755000
+16,China,NA,1242612300
+95,Christmas Island,NA,0
+89,Cocos (Keeling) Islands,NA,0
+22,Comoros,NA,798000
+13,Congo,NA,3999000
+25,Cook Islands,NA,18000
+50,Cote d'Ivoire,NA,0
+14,Democratic Republic of the Congo,NA,48000000
+26,Djibouti,NA,793000
+27,Dominica,NA,79000
+28,Dominican Republic,NA,8895000
+29,Egypt,NA,68400000
+30,Equatorial Guinea,NA,504000
+31,Eritrea,NA,4401000
+32,Ethiopia,NA,66500000
+35,Falkland Islands (Malvinas),NA,3000
+79,Faroe Islands,NA,47000
+34,Fiji,NA,848000
+33,French Guiana,NA,187000
+37,French Polynesia,NA,257000
+92,French Southern and Antarctic Lands,NA,0
+39,Gabon,NA,1384000
+38,Gambia,NA,1517000
+40,Ghana,NA,22113000
+81,Gibraltar,NA,28000
+42,Greenland,NA,57000
+41,Grenada,NA,103000
+145,Guadeloupe,NA,448000
+43,Guam,NA,170000
+160,Guernsey,NA,0
+44,Guinea,NA,9402000
+105,Guinea-Bissau,NA,1586000
+45,Guyana,NA,751000
+46,Haiti,NA,8528000
+93,Heard Island and McDonald Islands,NA,0
+156,Holy See (Vatican City),NA,783
+47,Honduras,NA,7205000
+77,Hong Kong,NA,7041000
+48,India,NA,1040000000
+144,Indonesia,NA,206264595
+49,Iran (Islamic Republic of),NA,65900000
+51,Iraq,NA,28807000
+82,Isle of Man,NA,77000
+161,Jersey,NA,0
+52,Jordan,NA,5703000
+53,Kenya,NA,34256000
+54,"Korea, Democratic People's Republic of",NA,0
+55,"Korea, Republic of",NA,0
+56,Lao People's Democratic Republic,NA,5924000
+57,Lebanon,NA,3577000
+114,Lesotho,NA,1795000
+58,Liberia,NA,3283000
+60,Libyan Arab Jamahiriya,NA,0
+59,Liechtenstein,NA,35000
+83,Macau,NA,460000
+61,Madagascar,NA,18606000
+72,Malawi,NA,12599000
+70,Malaysia,NA,25347000
+66,Mali,NA,13518000
+151,Marshall Islands,NA,62000
+62,Martinique,NA,396000
+68,Mauritania,NA,3069000
+86,Mayotte,NA,0
+36,"Micronesia, Federated States of",NA,110000
+84,Monaco,NA,35000
+63,Mongolia,NA,2646000
+64,Montserrat,NA,4000
+67,Morocco,NA,31478000
+71,Mozambique,NA,19043000
+137,Namibia,NA,2031000
+100,Nauru,NA,14000
+99,Nepal,NA,27133000
+146,Netherlands Antilles,NA,183000
+73,New Caledonia,NA,237000
+101,Nicaragua,NA,5487000
+75,Niger,NA,13957000
+98,Nigeria,NA,110000000
+74,Niue,NA,2100
+88,Norfolk Island,NA,0
+78,Northern Mariana Islands,NA,81000
+69,Oman,NA,2567000
+103,Pakistan,NA,140000000
+150,Palau,NA,20000
+85,Palestine,NA,3702000
+104,Papua New Guinea,NA,5887000
+102,Peru,NA,27968000
+149,Pitcairn Islands,NA,67
+106,Qatar,NA,813000
+108,Republic of Moldova,NA,4206000
+107,Reunion,NA,785000
+109,Russia,NA,147000000
+110,Rwanda,NA,9038000
+159,Saint Barthelemy,NA,0
+153,Saint Helena,NA,5000
+112,Saint Kitts and Nevis,NA,43000
+158,Saint Martin,NA,0
+152,Saint Pierre and Miquelon,NA,6000
+132,Saint Vincent and the Grenadines,NA,119000
+139,Samoa,NA,185000
+125,Sao Tome and Principe,NA,157000
+111,Saudi Arabia,NA,24573000
+116,Senegal,NA,11658000
+113,Seychelles,NA,81000
+117,Sierra Leone,NA,5525000
+10,Solomon Islands,NA,478000
+118,Somalia,NA,8228000
+162,South Georgia South Sandwich Islands,NA,4474000
+119,Sudan,NA,36233000
+157,Svalbard,NA,0
+140,Swaziland,NA,1032000
+120,Syrian Arab Republic,NA,19792000
+163,Taiwan,NA,22488000
+121,Tajikistan,NA,6507000
+65,The former Yugoslav Republic of Macedonia,NA,2034000
+148,Timor-Leste,NA,0
+124,Togo,NA,6145000
+122,Tokelau,NA,1000
+123,Tonga,NA,102000
+126,Tunisia,NA,10102000
+127,Turkey,NA,63300000
+154,Turks and Caicos Islands,NA,26000
+128,Tuvalu,NA,10000
+130,Uganda,NA,28816000
+147,United Arab Emirates,NA,4496000
+129,United Republic of Tanzania,NA,38329000
+96,United States Minor Outlying Islands,NA,0
+136,United States Virgin Islands,NA,112000
+97,Vanuatu,NA,211000
+133,Venezuela,NA,26749000
+135,Vietnam,NA,80400000
+138,Wallis and Futuna Islands,NA,15000
+155,Western Sahara,NA,341000
+141,Yemen,NA,20975000
+142,Zambia,NA,11668000
+143,Zimbabwe,NA,11668000
