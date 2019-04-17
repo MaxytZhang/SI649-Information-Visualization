@@ -1,0 +1,104 @@
+/* country module */
+
+.box001 {
+  float: left;
+  width: 75px;
+  height: 45px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #536cb3;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+
+.box002 {
+  display:inline-block;
+  width: 75px;
+  height: 45px;
+  margin: 18px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.leadword {
+  font-family: 'Roboto', sans-serif;
+  font-size:21px;
+  color: #536cb3;
+}
+
+#score001 {
+  float:inline-block;
+  background-color: #ef4136;
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:8px;
+}
+
+.submit {
+  float:inline-block;
+  background-color: #f47016;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:8px;
+}
+
+#message001 {
+  font-family: 'Muli', sans-serif;
+  font-size: 27px;
+  color: #4caf50;
+}
+/* gender module */
+
+.button {
+  float:inline-block;
+  background-color: #f47016;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:8px;
+}
+
+.img {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.question {
+  font-family: 'Underdog', cursive;
+  font-size: 37px;
+}
+
+#first {
+  font-family: 'Muli', sans-serif;
+  font-size: 27px;
+  color: #4caf50;
+}
+
+#second {
+  font-family: 'Muli', sans-serif;
+  font-size: 27px;
+  color: #ef4136;
+}
