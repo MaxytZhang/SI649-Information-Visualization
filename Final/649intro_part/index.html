@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <title>Introduction</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Roboto|Underdog" rel="stylesheet">
+  </head>
+  <body>
+
+<!-- country module -->
+    <p class="question"> Which countries that you think has the comparatively highest suicide rate? </p>
+    <p class="leadword"> Take a guess and rank the following countries! </p>
+    <p>Score: <text id="score001">0</text></p>
+
+       <div class="box002" ondrop="drop001(event)">
+           <!-- <text ondragstart="dragStart001(event)" draggable="true" id="target001">Jerusalem</text> -->
+           <img src="images/russia.png" style= "width:75px; height:55px;" ondragstart="dragStart001(event)" draggable="true" id="target001">
+       </div>
+       <div class="box002" ondrop="drop002(event)">
+           <img src="images/us.png " style= "width:75px; height:55px;" ondragstart="dragStart002(event)" draggable="true" id="target002">
+       </div>
+
+       <div class="box002" ondrop="drop003(event)">
+        <img src="images/uk.png " style= "width:75px; height:55px;" ondragstart="dragStart003(event)" draggable="true" id="target003">
+       </div>
+
+       <div class="box002" ondrop="drop004(event)">
+           <img src="images/china.png " style= "width:75px; height:55px;" ondragstart="dragStart004(event)" draggable="true" id="target004">
+       </div>
+
+       <div class="box002" ondrop="drop005(event)">
+           <img src="images/sf.png " style= "width:75px; height:55px;" ondragstart="dragStart005(event)" draggable="true" id="target005">
+       </div>
+       <br /><br /><br />
+
+       <div class="box001" ondrop="drop006(event)" ondragover="allowDrop001(event)" id="place001">No.1</div>
+
+       <div class="box001" ondrop="drop007(event)" ondragover="allowDrop002(event)" id="place002">No.2</div>
+
+       <div class="box001" ondrop="drop008(event)" ondragover="allowDrop003(event)" id="place003">No.3</div>
+
+       <div class="box001" ondrop="drop009(event)" ondragover="allowDrop004(event)" id="place004">No.4</div>
+
+       <div class="box001" ondrop="drop010(event)" ondragover="allowDrop005(event)" id="place005">No.5</div><br/><br/><br/>
+
+       <button class = "submit" onclick="submit001()">Submit</button>
+       <p id="message001"></p>
+
+<!-- country module -->
+
+<!-- gender module -->
+    <p class="question"> Which gender that you think has a higher suicide rate? </p>
+
+
+    <div class="img">
+      <img src="images/male.png" alt="Male" ></div>
+    <div class="img">
+      <img src="images/female.png" alt="Female" ></div>
+    <div>
+    <button class="button" onclick = "myFunction1()"> Male </button>
+    <p id = "first"></p>
+    </div>
+    <div>
+    <button class="button" onclick = "myFunction2()"> Female </button>
+    <p id = "second"></p>
+    </div>
+
+<!-- gender module -->
+
+
+    <script>
+// country module
+
+      var b = 0;
+        b++;
+      function dragStart001(event) {
+        event.dataTransfer.setData("choice001", event.target.id);
+      }
+
+      function dragStart002(event) {
+        event.dataTransfer.setData("choice002", event.target.id);
+      }
+
+      function dragStart003(event) {
+        event.dataTransfer.setData("choice003", event.target.id);
+      }
+
+      function dragStart004(event) {
+        event.dataTransfer.setData("choice004", event.target.id);
+      }
+
+      function dragStart005(event) {
+        event.dataTransfer.setData("choice005", event.target.id);
+      }
+
+      function allowDrop001(event) {
+        event.preventDefault();
+      }
+
+      function allowDrop002(event) {
+        event.preventDefault();
+      }
+
+      function allowDrop003(event) {
+        event.preventDefault();
+      }
+
+      function allowDrop004(event) {
+        event.preventDefault();
+      }
+
+      function allowDrop005(event) {
+        event.preventDefault();
+      }
+
+      function drop006(event) {
+        var data = event.dataTransfer.getData("choice001");
+        event.target.appendChild(document.getElementById(data));
+      score001.innerHTML = b++;
+            place001.innerHTML = "Russia";
+      }
+
+      function drop007(event) {
+        var data = event.dataTransfer.getData("choice002");
+        event.target.appendChild(document.getElementById(data));
+      score001.innerHTML = b++;
+            place002.innerHTML = "United States";
+      }
+
+      function drop008(event) {
+        var data = event.dataTransfer.getData("choice003");
+        event.target.appendChild(document.getElementById(data));
+      score001.innerHTML = b++;
+            place003.innerHTML = "United Kingdom";
+      }
+
+      function drop009(event) {
+        var data = event.dataTransfer.getData("choice004");
+        event.target.appendChild(document.getElementById(data));
+      score001.innerHTML = b++;
+            place004.innerHTML = "China";
+      }
+
+      function drop010(event) {
+        var data = event.dataTransfer.getData("choice005");
+        event.target.appendChild(document.getElementById(data));
+      score001.innerHTML = b++;
+            place005.innerHTML = "South Africa";
+      }
+
+      function drop001(event) {
+        event.preventDefault();
+      }
+
+      function drop002(event) {
+        event.preventDefault();
+      }
+
+      function drop003(event) {
+        event.preventDefault();
+
+      }
+
+      function drop004(event) {
+        event.preventDefault();
+      }
+
+      function drop005(event) {
+        event.preventDefault();
+      }
+
+      function submit001() {
+      if (b > 5) {
+      message001.innerHTML = "Congratulations! You are accurate for sorting these five countries.";
+      }
+      }
+// country module
+
+
+
+// gender module
+      function myFunction1(){
+        var text1 = "Congratuations! You are right. In general, the male suicide rate is higher than the female from the world scope.";
+        // var text2 = "Sorry, you are partial right.The female suicide rate is higher than the male exists in several countries in specific years.";
+        document.getElementById("first").innerHTML = text1;
+        // document.getElementById("second").innerHTML = text2;
+      }
+      function myFunction2(){
+        var text2 = "Sorry, you are partial right. The female suicide rate is higher than the male exists in several countries in specific years.";
+        document.getElementById("second").innerHTML = text2;
+      }
+
+// gender module
+
+    </script>
+
+
+
+
+  </body>
+</html>
