@@ -27,8 +27,8 @@ chart1.source(frame);
 chart1.axis('country',{
     title: null
 });
-chart1.guide().tag([-1,0],[10,0],'0');
-chart1.guide().tag([-0.5,-0.6],[10,-0.6],'Global Average: -0.6');
+chart1.guide().tag([-1,0],[10,0],'1');
+chart1.guide().tag([-0.5,-0.6],[10,-0.6],'Global Average: 0.40');
 chart1.axis('country', {
     title: null,
     tickLine: null,
@@ -39,37 +39,37 @@ chart1.axis('ratio', {
     tickLine: null,
     line:null,
     labels:null});
-chart1.guide().text([8.8, -0.1], 'Myanmar', {
+chart1.guide().text([8.8, -0.15], 'Myanmar', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([8.8, 0.8], 'NO.1', {
+chart1.guide().text([8.8, 0.85], 'NO.1', {
     fill:'white',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([7.8, -0.1], 'Morocco', {
+chart1.guide().text([7.8, -0.15], 'Morocco', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([6.8, -0.1], 'Lesotho', {
+chart1.guide().text([6.8, -0.15], 'Lesotho', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([5.8, -0.1], 'Nigeria', {
+chart1.guide().text([5.8, -0.15], 'Nigeria', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([4.8, -0.1], 'Bangladesh', {
+chart1.guide().text([4.8, -0.15], 'Bangladesh', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([3.8, -0.1], 'China', {
+chart1.guide().text([3.8, -0.15], 'China', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
@@ -89,12 +89,12 @@ chart1.guide().text([0.8, 0.1], 'U.S.', {
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([-0.2, 0.3], 'Antigua and Barbuda', {
+chart1.guide().text([-0.2, 0.37], 'Antigua and Barbuda', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([-0.2, -0.7], 'NO.1', {
+chart1.guide().text([-0.2, -0.75], 'NO.1', {
     fill:'white',
     textAlign: 'center',
     fontSize: 14
