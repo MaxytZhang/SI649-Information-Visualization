@@ -21,7 +21,7 @@ function loadData(){
 
     // set the colors
     var z = d3.scaleOrdinal()
-        .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b"]);
+        .range(["#608FD9", "#0AC1CF", "#FFA500", "#A52A2A"]);
 
     // load the csv and create the chart
     d3.csv("suicide_method_new.csv", function(d, i, columns) {
