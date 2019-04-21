@@ -27,7 +27,7 @@ chart1.source(frame);
 chart1.axis('country',{
     title: null
 });
-chart1.guide().tag([-1,0],[10,0],'1');
+chart1.guide().tag([-1,0],[10,0],'0');
 chart1.guide().tag([-0.5,-0.6],[10,-0.6],'Global Average: -0.6');
 chart1.axis('country', {
     title: null,
