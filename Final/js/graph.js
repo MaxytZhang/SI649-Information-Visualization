@@ -44,7 +44,7 @@ chart1.guide().text([8.8, -0.15], 'Myanmar', {
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([8.8, 0.85], 'NO.1', {
+chart1.guide().text([8.8, 0.9], 'NO.1', {
     fill:'white',
     textAlign: 'center',
     fontSize: 14
