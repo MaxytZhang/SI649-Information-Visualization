@@ -154,5 +154,37 @@ path { fill: #83B0EA;}
 .line {
     fill: none;
     stroke: steelblue;
-    stroke-width: 1.5px;
+    /*stroke-width: 20px;*/
+}
+
+.sv_q_title{
+    visibility: hidden;
+}
+
+.sv_main .sv_body{
+    border-top: none;
+}
+
+.sv_body{
+    border-top: white;
+}
+
+.sjs-sortablejs-result{
+    border: #007bff;
+}
+
+.sjs-sortablejs-source{
+    border: #007bff;
+}
+
+.sjs-sortablejs-item{
+    background-color: #007bff;
+}
+
+.sv_main input[type="button"], .sv_main button{
+    background-color: #007bff;
+}
+
+.sv_body .sv_completed_page{
+    visibility: hidden;
 }
