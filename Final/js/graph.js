@@ -39,62 +39,62 @@ chart1.axis('ratio', {
     tickLine: null,
     line:null,
     labels:null});
-chart1.guide().text([8.8, -0.075], 'Myanmar', {
+chart1.guide().text([8.8, -0.06], 'Myanmar', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([8.8, 1], 'NO.1', {
+chart1.guide().text([8.8, 0.8], 'NO.1', {
     fill:'white',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([7.8, -0.075], 'Morocco', {
+chart1.guide().text([7.8, -0.06], 'Morocco', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([6.8, -0.075], 'Lesotho', {
+chart1.guide().text([6.8, -0.06], 'Lesotho', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([5.8, -0.075], 'Nigeria', {
+chart1.guide().text([5.8, -0.06], 'Nigeria', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([4.8, -0.075], 'Bangladesh', {
+chart1.guide().text([4.8, -0.06], 'Bangladesh', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([3.8, -0.075], 'China', {
+chart1.guide().text([3.8, -0.06], 'China', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([2.8, 0.075], 'India', {
+chart1.guide().text([2.8, 0.1], 'India', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([1.8, 0.075], 'U.K.', {
+chart1.guide().text([1.8, 0.1], 'U.K.', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([0.8, 0.075], 'U.S.', {
+chart1.guide().text([0.8, 0.1], 'U.S.', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([-0.2, 0.16], 'Antigua and Barbuda', {
+chart1.guide().text([-0.2, 0.23], 'Antigua and Barbuda', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([-0.2, -0.94], 'NO.1', {
+chart1.guide().text([-0.2, -0.5], 'NO.1', {
     fill:'white',
     textAlign: 'center',
     fontSize: 14
