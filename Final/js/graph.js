@@ -64,7 +64,7 @@ chart1.guide().text([5.8, -0.15], 'Nigeria', {
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([4.8, -0.19], 'Bangladesh', {
+chart1.guide().text([4.8, -0.2], 'Bangladesh', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
