@@ -107,6 +107,10 @@ chart1.legend({
 chart1.coord('rect').transpose();
 chart1.interval().position('country*ratio').color('which gender has higher suicide rate');
 chart1.render();
+chart1.on('tooltipchange',function(ev){
+    var item = ev.items[0]; // 获取tooltip要显示的内容
+    item.value = 1 +  Number(item.value);
+  });
 
 
 
