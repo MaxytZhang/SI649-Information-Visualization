@@ -101,7 +101,7 @@ chart1.guide().text([-0.2, -0.5], 'NO.1', {
 });
 chart1.legend({
     position: 'bottom', // 设置图例的显示位置
-    dy: 19,
+    dy: 17,
 
 });
 chart1.coord('rect').transpose();
