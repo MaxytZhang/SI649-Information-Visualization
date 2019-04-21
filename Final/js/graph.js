@@ -39,7 +39,7 @@ chart1.axis('ratio', {
     tickLine: null,
     line:null,
     labels:null});
-chart1.guide().text([8.8, -0.06], 'Myanmar', {
+chart1.guide().text([8.8, -0.1], 'Myanmar', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
@@ -49,27 +49,27 @@ chart1.guide().text([8.8, 0.8], 'NO.1', {
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([7.8, -0.06], 'Morocco', {
+chart1.guide().text([7.8, -0.1], 'Morocco', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([6.8, -0.06], 'Lesotho', {
+chart1.guide().text([6.8, -0.1], 'Lesotho', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([5.8, -0.06], 'Nigeria', {
+chart1.guide().text([5.8, -0.1], 'Nigeria', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([4.8, -0.06], 'Bangladesh', {
+chart1.guide().text([4.8, -0.1], 'Bangladesh', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([3.8, -0.06], 'China', {
+chart1.guide().text([3.8, -0.1], 'China', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
@@ -89,12 +89,12 @@ chart1.guide().text([0.8, 0.1], 'U.S.', {
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([-0.2, 0.23], 'Antigua and Barbuda', {
+chart1.guide().text([-0.2, 0.3], 'Antigua and Barbuda', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart1.guide().text([-0.2, -0.5], 'NO.1', {
+chart1.guide().text([-0.2, -0.7], 'NO.1', {
     fill:'white',
     textAlign: 'center',
     fontSize: 14
@@ -102,7 +102,7 @@ chart1.guide().text([-0.2, -0.5], 'NO.1', {
 chart1.legend({
     position: 'bottom', // 设置图例的显示位置
     dy: 17,
-
+    mode:false,
 });
 chart1.coord('rect').transpose();
 chart1.interval().position('country*ratio').color('which gender has higher suicide rate');
