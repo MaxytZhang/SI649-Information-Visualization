@@ -15,7 +15,7 @@ var Stat = G2.Stat;
 var Frame = G2.Frame;
 var frame = new Frame(data);
 frame = Frame.sort(frame, 'ratio'); // 将数据按照ratio 进行排序，由大到小
-var chart = new G2.Chart({
+var chart1 = new G2.Chart({
     id : 'p2_2',
     forceFit: true,
     height: 450,
@@ -23,90 +23,90 @@ var chart = new G2.Chart({
         margin: [50, 300, 50, 120]
     }
 });
-chart.source(frame);
-chart.axis('country',{
+chart1.source(frame);
+chart1.axis('country',{
     title: null
 });
-chart.guide().tag([-1,0],[10,0],'1');
-chart.guide().tag([-0.5,-0.6],[10,-0.6],'Global Average: -0.6');
-chart.axis('country', {
+chart1.guide().tag([-1,0],[10,0],'1');
+chart1.guide().tag([-0.5,-0.6],[10,-0.6],'Global Average: -0.6');
+chart1.axis('country', {
     title: null,
     tickLine: null,
     line:null,
     labels:null});
-chart.axis('ratio', {
+chart1.axis('ratio', {
     title: null,
     tickLine: null,
     line:null,
     labels:null});
-chart.guide().text([8.8, -0.075], 'Myanmar', {
+chart1.guide().text([8.8, -0.075], 'Myanmar', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart.guide().text([8.8, 1.19], 'NO.1', {
+chart1.guide().text([8.8, 1.19], 'NO.1', {
     fill:'white',
     textAlign: 'center',
     fontSize: 14
 });
-chart.guide().text([7.8, -0.075], 'Morocco', {
+chart1.guide().text([7.8, -0.075], 'Morocco', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart.guide().text([6.8, -0.075], 'Lesotho', {
+chart1.guide().text([6.8, -0.075], 'Lesotho', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart.guide().text([5.8, -0.075], 'Nigeria', {
+chart1.guide().text([5.8, -0.075], 'Nigeria', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart.guide().text([4.8, -0.075], 'Bangladesh', {
+chart1.guide().text([4.8, -0.075], 'Bangladesh', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart.guide().text([3.8, -0.075], 'China', {
+chart1.guide().text([3.8, -0.075], 'China', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart.guide().text([2.8, 0.075], 'India', {
+chart1.guide().text([2.8, 0.075], 'India', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart.guide().text([1.8, 0.075], 'U.K.', {
+chart1.guide().text([1.8, 0.075], 'U.K.', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart.guide().text([0.8, 0.075], 'U.S.', {
+chart1.guide().text([0.8, 0.075], 'U.S.', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart.guide().text([-0.2, 0.16], 'Antigua and Barbuda', {
+chart1.guide().text([-0.2, 0.16], 'Antigua and Barbuda', {
     fill:'black',
     textAlign: 'center',
     fontSize: 14
 });
-chart.guide().text([-0.2, -0.94], 'NO.1', {
+chart1.guide().text([-0.2, -0.94], 'NO.1', {
     fill:'white',
     textAlign: 'center',
     fontSize: 14
 });
-chart.legend({
+chart1.legend({
     position: 'bottom', // 设置图例的显示位置
     dy: 19,
 
 });
-chart.coord('rect').transpose();
-chart.interval().position('country*ratio').color('which gender has higher suicide rate');
-chart.render();
+chart1.coord('rect').transpose();
+chart1.interval().position('country*ratio').color('which gender has higher suicide rate');
+chart1.render();
 
 
 
