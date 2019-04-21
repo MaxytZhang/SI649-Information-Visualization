@@ -113,18 +113,18 @@ chart.render();
 
 
 var data4 = [
-    {item: "5-14 years", value: 0.0000077668371880687, obj: "female"},
-    {item: "15-24 years", value: 0.0000523254962035587, obj: "female"},
-    {item: "25-34 years", value: 0.0000669892045319588, obj: "female"},
-    {item: "35-54 years", value: 0.0000975878512780408, obj: "female"},
-    {item: "55-74 years", value: 0.0000817869887494479, obj: "female"},
-    {item: "75+ years", value: 0.0000458455991535883, obj: "female"},
-    {item: "5-14 years", value: 0.000011986469673033, obj: "male"},
-    {item: "15-24 years", value: 0.000192747553810681, obj: "male"},
-    {item: "25-34 years", value: 0.000248587247008946, obj: "male"},
-    {item: "35-54 years", value: 0.000279274021970804, obj: "male"},
-    {item: "55-74 years", value: 0.000281050214108627, obj: "male"},
-    {item: "75+ years", value: 0.00038807333521312, obj: "male"},
+    {item: "5-14 years", value: 0.0077668371880687, obj: "female"},
+    {item: "15-24 years", value: 0.0523254962035587, obj: "female"},
+    {item: "25-34 years", value: 0.0669892045319588, obj: "female"},
+    {item: "35-54 years", value: 0.0975878512780408, obj: "female"},
+    {item: "55-74 years", value: 0.0817869887494479, obj: "female"},
+    {item: "75+ years", value: 0.0458455991535883, obj: "female"},
+    {item: "5-14 years", value: 0.011986469673033, obj: "male"},
+    {item: "15-24 years", value: 0.192747553810681, obj: "male"},
+    {item: "25-34 years", value: 0.248587247008946, obj: "male"},
+    {item: "35-54 years", value: 0.279274021970804, obj: "male"},
+    {item: "55-74 years", value: 0.281050214108627, obj: "male"},
+    {item: "75+ years", value: 0.38807333521312, obj: "male"},
 ];
 var chart = new G2.Chart({
     id: 'p3_1',
@@ -137,7 +137,7 @@ var chart = new G2.Chart({
 chart.source(data4, {
     'value': {
         min: 0,
-        max: 0.0004,
+        max: 0.4,
         tickCount: 5
     }
 });
