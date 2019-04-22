@@ -107,26 +107,26 @@ function multiLineChart(dataitems, pos) {
         .attr("dy", ".35em")
         .attr("text-anchor", "start")
         .style("fill", "#0AC1CF")
-        .text("suicide_rate_per1k");
+        .text("Suicide Rate");
 
     svg.append("text")
         .attr("transform", "translate(" + -40 + "," + (y(dataitems[1]['values'][0]['other'])-10) + ")")
         .attr("dy", ".35em")
         .attr("text-anchor", "start")
         .style("fill", "#608FD9")
-        .text("Spirits Consumption Per Person");
+        .text("Spirits");
 
     svg.append("text")
         .attr("transform", "translate(" + -40 + "," + (y(dataitems[2]['values'][0]['other'])-10) + ")")
         .attr("dy", ".35em")
         .attr("text-anchor", "start")
         .style("fill", "black")
-        .text("Beer Consumption Per Person");
+        .text("Beer");
 
     svg.append("text")
         .attr("transform", "translate(" + -40 + "," + (y(dataitems[3]['values'][0]['other'])-10) + ")")
         .attr("dy", ".35em")
         .attr("text-anchor", "start")
         .style("fill", "black")
-        .text("Wine Consumption Per Person");
+        .text("Wine");
 }

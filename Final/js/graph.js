@@ -1,3 +1,65 @@
+var data2 = [
+    {"country":"Greenland","suicide incidence rate (per 1k)":0.80},
+    {"country":"Lesotho","suicide incidence rate (per 1k)":0.39},
+    {"country":"Guyana","suicide incidence rate (per 1k)":0.32},
+    {"country":"Lithuania","suicide incidence rate (per 1k)":0.31},
+    {"country":"Russia","suicide incidence rate (per 1k)":0.30},
+    {"country":"South Africa","suicide incidence rate (per 1k)":0.14},
+    {"country":"U.S.","suicide incidence rate (per 1k)":0.13},
+    {"country":"China","suicide incidence rate (per 1k)":0.09},
+    {"country":"U.K.","suicide incidence rate (per 1k)":0.08},
+];
+var Stat = G2.Stat;
+var Frame = G2.Frame;
+var frame = new Frame(data2);
+frame = Frame.sort(frame, 'suicide incidence rate (per 1k)'); // 将数据按照suicide incidence rate (per 1k) 进行排序，由大到小
+var chart2 = new G2.Chart({
+    id : 'p1_2',
+    forceFit: true,
+    height: 450,
+    plotCfg: {
+        margin: [50, 120, 20, 500]
+    }
+});
+chart2.source(frame);
+chart2.axis('country',{
+    title: null
+});
+//chart.guide().line([-0.5,1],[2000,0]);
+//chart.guide().tag([-0.5,1],[10,1],'suicide suicide incidence rate (per 1k) (per 1k) of two gender is same')
+chart2.guide().tag([-0.5,0.11],[9,0.11],'worldwide average: 0.11 (per 1k)');
+chart2.guide().text([7.7, 0.75], 'NO.1', {
+    fill:'white',
+    textAlign: 'center',
+    fontSize: 20
+});
+chart2.guide().text([6.7, 0.34], 'NO.2', {
+    fill:'white',
+    textAlign: 'center',
+    fontSize: 20
+});
+chart2.guide().text([5.7, 0.27], 'NO.3', {
+    fill:'white',
+    textAlign: 'center',
+    fontSize: 20
+});
+chart2.guide().text([4.7, 0.26], 'NO.4', {
+    fill:'white',
+    textAlign: 'center',
+    fontSize: 20
+});
+chart2.guide().text([3.7, 0.25], 'NO.5', {
+    fill:'white',
+    textAlign: 'center',
+    fontSize: 20
+});
+chart2.coord('rect').transpose();
+chart2.interval().position('country*suicide incidence rate (per 1k)');
+chart2.render();
+
+
+
+
 var data = [
     {"country":"U.S.","ratio":-0.75,'which gender has higher suicide rate':'male has higher suicide rate'},
     {"country":"Myanmar","ratio":1.23,'which gender has higher suicide rate':'female has higher suicide rate'},
