@@ -114,6 +114,7 @@ chart1.render();
 chart1.on('tooltipchange',function(ev){
     var item = ev.items[0]; // 获取tooltip要显示的内容
     item.value = 1 +  Number(item.value);
+    item.name = 'female-male suicide ratio';
   });
 
 
