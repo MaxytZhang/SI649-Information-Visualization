@@ -18,7 +18,7 @@ var chart2 = new G2.Chart({
     forceFit: true,
     height: 450,
     plotCfg: {
-        margin: [50, 120, 20, 500]
+        margin: [50, 200, 20, 200]
     }
 });
 chart2.source(frame);
