@@ -25,7 +25,7 @@ function getData() {
         });
 
         var spirit = [factors[2], factors[17], factors[18], factors[19]];
-        multiLineChart(spirit, "#p3_2");
+        multiLineChart(spirit, "#p3_3");
     });
 }
 

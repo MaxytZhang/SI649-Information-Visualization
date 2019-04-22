@@ -7,7 +7,7 @@ function loadData(){
         width = 800 - margin.left - margin.right,
         height = 450 - margin.top - margin.bottom;
 
-    var svg = d3.select("#p3_3").append("svg")
+    var svg = d3.select("#p3_2").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom);
 
