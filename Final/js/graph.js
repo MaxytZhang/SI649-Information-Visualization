@@ -104,7 +104,7 @@ chart1.legend({
     dy: 17,
     mode:false,
 });
-chart.tooltip({
+chart1.tooltip({
   offset: 10, // 设置 tooltip 显示位置时距离当前鼠标 x 轴方向上的距
   name: 'female-male suicide ratio',
 });
