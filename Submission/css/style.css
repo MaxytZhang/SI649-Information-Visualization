@@ -1,0 +1,190 @@
+body { 
+  font-family: helvetica, arial, sans-serif; 
+}
+
+h1 {
+  text-align:center; 
+}
+
+.sidenav {
+  height: 40%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 30%;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:black;
+}
+
+#content {
+  margin-right: 250px;
+  padding: 0px 10px;
+}
+
+#chart7 {
+  font-family: helvetica, arial, sans-serif; 
+  margin: 0 auto;
+  font-size: 10px;
+  width: 450px;
+  height: 300px
+}
+
+path { fill: #83B0EA;}	
+
+.domain { 
+		fill: none; 
+		stroke: #000; 
+		stroke-width: 1px; 
+	}
+
+/* country module */
+
+.box001 {
+    height: 75px;
+    padding: 10px;
+    background-color: #536cb3;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+
+.box002 {
+    display:inline-block;
+    height: 45px;
+    margin: 18px;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.leadword {
+    font-family: 'Roboto', sans-serif;
+    font-size:21px;
+    color: #536cb3;
+}
+
+#score001 {
+    float:inline-block;
+    background-color: #ef4136;
+    border: none;
+    color: white;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 21px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:8px;
+}
+
+.submit {
+    float:inline-block;
+    background-color: #f47016;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 21px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:8px;
+}
+
+#message001 {
+    font-family: 'Muli', sans-serif;
+    font-size: 27px;
+    color: #4caf50;
+}
+/* gender module */
+
+.button {
+    float:inline-block;
+    background-color: #f47016;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 21px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:8px;
+}
+
+.img {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.question {
+    font-family: 'Underdog', cursive;
+    font-size: 37px;
+}
+
+#first {
+    font-family: 'Muli', sans-serif;
+    font-size: 27px;
+    color: #4caf50;
+}
+
+#second {
+    font-family: 'Muli', sans-serif;
+    font-size: 27px;
+    color: #ef4136;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    /*stroke-width: 20px;*/
+}
+
+.sv_q_title{
+    visibility: hidden;
+}
+
+.sv_main .sv_body{
+    border-top: none;
+}
+
+.sv_body{
+    border-top: white;
+}
+
+.sjs-sortablejs-result{
+    border: #007bff;
+}
+
+.sjs-sortablejs-source{
+    border: #007bff;
+}
+
+.sjs-sortablejs-item{
+    background-color: #007bff;
+}
+
+.sv_main input[type="button"], .sv_main button{
+    background-color: #007bff;
+}
+
+.sv_body .sv_completed_page{
+    visibility: hidden;
+}
